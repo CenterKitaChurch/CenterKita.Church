@@ -1,1 +1,1 @@
-# CenterKita.Church
+# CenterKitaChurch
