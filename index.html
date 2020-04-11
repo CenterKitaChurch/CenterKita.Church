@@ -9,8 +9,7 @@
   req.onreadystatechange = function() {
     if(req.readyState == 4 && req.status == 200){
       var data = JSON.parse(req.responseText);
-      alert(data.url)
-//       location.href = req.responseText.url;
+      location.href = data.url;
     }
   };
   req.open("GET", "https://centerkitachurch.github.io/json.json", false);
@@ -18,5 +17,5 @@
   </script>
 </head>
 <body>
-  <a href="https://centerkitachurch.github.io/yt/">こちらをクリックしてください。<a> 
+  <a href="https://www.youtube.com/channel/UCIbRaP2YGx8Ir-QS3OwXZ1A">10秒ほど画面が切り替わらない場合は、こちらをタップしてください。<a> 
 </body>
