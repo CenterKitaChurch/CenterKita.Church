@@ -6,13 +6,14 @@
   <title>センター北教会ライブ配信</title>
   <script>
   var req = new XMLHttpRequest();
+  var url = "https://centerkitachurch.github.io/json.json" + "&timestamp=" + now.getTime();
   req.onreadystatechange = function() {
     if(req.readyState == 4 && req.status == 200){
       var data = JSON.parse(req.responseText);
       location.href = data.url;
     }
   };
-  req.open("GET", "https://centerkitachurch.github.io/json.json", false);
+  req.open("GET", url, false);
   req.send(null);	
   </script>
 </head>
