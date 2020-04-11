@@ -9,7 +9,8 @@
   req.onreadystatechange = function() {
     if(req.readyState == 4 && req.status == 200){
       var data = JSON.parse(req.responseText);
-      location.href = data.url;
+      alert(data.url);
+//       location.href = data.url;
     }
   };
   req.open("GET", "https://centerkitachurch.github.io/json.json?p=" + (new Date()).getTime(), false);
