@@ -9,11 +9,10 @@
   req.onreadystatechange = function() {
     if(req.readyState == 4 && req.status == 200){
       var data = JSON.parse(req.responseText);
-      alert(data.url);
-//       location.href = data.url;
+      location.href = data.url;
     }
   };
-  req.open("GET", "https://centerkitachurch.github.io/json.json?p=ttt" + (new Date()).getTime(), false);
+  req.open("GET", "https://centerkitachurch.github.io/json.json?=" + (new Date()).getTime(), false);
   req.setRequestHeader('Pragma', 'no-cache');   
   req.setRequestHeader('Cache-Control', 'no-cache');                    
   req.setRequestHeader('If-Modified-Since', 'Sat, 01 Jan 2000 00:00:00 GMT');
