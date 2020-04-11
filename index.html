@@ -8,12 +8,11 @@
   var req = new XMLHttpRequest();
   req.onreadystatechange = function() {
     if(req.readyState == 4 && req.status == 200){
-      alert(req.url);
+      location.href = req.url;
     }
   };
   req.open("GET", "https://centerkitachurch.github.io/json.json", false);
   req.send(null);	
-//     location.href = "https://centerkitachurch.github.io/json.json";
   </script>
 </head>
 <body>
