@@ -8,7 +8,7 @@
   var req = new XMLHttpRequest();
   req.onreadystatechange = function() {
     if(req.readyState == 4 && req.status == 200){
-      alert(req.responseText.url)
+      alert(req.url.textContent)
 //       location.href = req.responseText.url;
     }
   };
